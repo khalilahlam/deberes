@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{
+            background-color: tomato;
+        }
+        .grey {
+        background-color: beige;
+        }
+
+    </style>
+     <script src="main2.js" defer></script>
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="bg-light">
+        <input type="text" name="" id="table_x">
+        <input type="text" name="" id="table_y">
+        <button type="button" id="generar" onclick="generarTabla()" class="btn btn-primary">Generar</button>
+        <button type="reset" id="borrar" onclick="borrarTabla()" class="btn btn-danger">Borrar</button>
+        <button type="button"  id="seleccionar" onclick="seleccionarCelda()" class="btn btn-success">Seleccionar</button>
+
+        <div id="tabla"></div>
+
+        <ol id="seleccion"></ol>
+
+    </div>
+</body>
+</html>
